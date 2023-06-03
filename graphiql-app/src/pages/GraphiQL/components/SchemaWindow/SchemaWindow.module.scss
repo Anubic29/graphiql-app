@@ -1,0 +1,48 @@
+.title {
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.first-text {
+  padding-left: 10px;
+}
+
+.nested-item {
+  padding-left: 20px;
+}
+
+.divider {
+  margin-top: 5px !important;
+}
+
+.description {
+  padding: 3px 10px;
+  max-width: 300px;
+  
+  &.main-desc {
+    margin-top: 5px !important;
+  }
+
+  .type {
+    margin-top: 5px;
+  }
+}
+
+.control-panel {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  column-gap: 15px;
+
+  .button {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-text {
+      text-decoration: underline;
+    }
+  }
+}

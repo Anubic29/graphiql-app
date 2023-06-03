@@ -1,0 +1,68 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+
+  .title {
+    margin-bottom: 15px;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    width: 100%;
+  }
+
+  .text-content {
+    padding-top: 25px;
+    margin: 0 15px;
+    max-width: 400px;
+  }
+}
+
+.avatar-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  width: 100%;
+  max-width: 700px;
+  flex-wrap: wrap;
+}
+
+.avatar-item {
+  margin: 0 auto;
+  list-style: none;
+}
+
+.project-logo {
+  width: 250px;
+  height: 250px;
+  background: url('../../assets/images/graphql.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.course-logo {
+  width: 250px;
+  height: 150px;
+  background: url('../../assets/svg/course.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 775px) {
+  .section {
+    .text-content {
+      margin: 0 auto;
+    }
+  }
+  
+  .project-logo,
+  .course-logo {
+    display: none;
+  }
+}

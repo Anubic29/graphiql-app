@@ -1,0 +1,9 @@
+link {
+  text-decoration: none;
+  display: inline-flex;
+
+  &:hover {
+    text-decoration: solid;
+    color: red;
+  }
+}

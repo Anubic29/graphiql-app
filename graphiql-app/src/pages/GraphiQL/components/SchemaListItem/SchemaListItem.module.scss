@@ -1,0 +1,12 @@
+.item {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  
+  padding: 6px 10px;
+
+  &.click-item {
+    justify-content: space-between;
+    cursor: pointer;
+  }
+}

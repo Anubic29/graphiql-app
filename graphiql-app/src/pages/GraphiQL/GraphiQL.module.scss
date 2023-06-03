@@ -1,0 +1,123 @@
+.graph-main-block {
+  display: flex !important;
+  width: 100%;
+  padding: 15px 0;
+  position: relative;
+  overflow-x: hidden;
+  margin-right: '50px';
+  overflow: hidden;
+}
+
+.editor-block {
+  position: relative;
+  width: 50%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+
+  .query-block {
+    flex: 1 1;
+    display: flex;
+
+    .command-panel {
+      display: flex;
+      flex-direction: column;
+      padding: 0 5px;
+    }
+  }
+}
+
+.response-block {
+  flex: 1 1;
+  margin-left: 50px;
+  overflow: hidden;
+  position: relative;
+
+  .pre-block {
+    top: 50%;
+    left: 0;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    transform: translate(0, -50%);
+    padding: 0 20px;
+    overflow: auto;
+  }
+
+  .response {
+    white-space: pre;
+    width: fit-content;
+  }
+}
+
+.loader-block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-block {
+
+  .tab-panel {
+    display: flex;
+    padding: 5px;
+    column-gap: 10px;
+
+    .tab {
+      padding: 0 10px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-close {
+      height: 25px;
+      width: 25px;
+      border-radius: 5px;
+      margin-left: auto;
+      cursor: pointer;
+    }
+  }
+
+  &.opened {
+    height: 246px;
+  }
+}
+
+@media (max-width: 800px) {
+  .graph-main-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .editor-block {
+    width: 88%;
+  }
+  .response-block {
+    width: 88%;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 20px;
+    min-height: 250px;
+  }
+}
+
+.textarea-block {
+  animation: slide-in 0.5s ease-out; 
+}
+
+@keyframes slide-in {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 210px;
+  }
+  100% {
+    height: 200px;
+  }
+}
